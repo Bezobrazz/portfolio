@@ -1,0 +1,24 @@
+.title {
+  font-style: normal;
+  font-weight: 700;
+  color: #000000;
+  &_fs48 {
+    font-size: 48px;
+  }
+  &_fs36 {
+    font-size: 36px;
+  }
+}
+.subtitle {
+  font-weight: 700;
+  color: #000000;
+  &_fs20 {
+    font-size: 20px;
+  }
+  &_fs16 {
+    font-size: 16px;
+  }
+  &_fs14 {
+    font-size: 14px;
+  }
+}

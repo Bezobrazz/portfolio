@@ -1,17 +1,17 @@
 window.addEventListener("DOMContentLoaded", () => {
-  const menu = document.querySelector(".menu__wrapper"),
-    menuItem = document.querySelectorAll(".menu__li"),
-    burger = document.querySelector(".burger");
+  const menu = document.querySelector(".menu"),
+    // menuItem = document.querySelectorAll(".menu__li"),
+    burger = document.querySelector(".burger"),
+    overlay = document.querySelector(".menu__overlay"),
+    closeElem = document.querySelector(".menu__close");
 
   burger.addEventListener("click", () => {
-    burger.classList.toggle("burger_active");
-    menu.classList.toggle("menu__wrapper_active");
+    menu.classList.add("menu_active");
+    overlay.classList.add("menu__overlay_active");
   });
 
-  menuItem.forEach((item) => {
-    item.addEventListener("click", () => {
-      burger.classList.toggle("burger_active");
-      menu.classList.toggle("menu__wrapper_active");
-    });
+  closeElem.addEventListener("click", () => {
+    menu.classList.remove("menu_active");
+    overlay.classList.remove("menu__overlay_active");
   });
 });

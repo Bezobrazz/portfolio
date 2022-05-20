@@ -1,37 +1,19 @@
 .header {
   position: relative;
-  height: 800px;
+  min-height: 100vh;
   padding: 206px 0 364px 0;
-  background: url(../img/main_bg.jpg) center (center/cover) no-repeat;
+  background: url(../img/main_bg.jpg) no-repeat 50% / cover;
   .subtitle {
     margin-bottom: 10px;
+    padding-left: 10px;
     position: relative;
     z-index: 1;
-    &::before {
-      content: " ";
-      display: block;
-      position: absolute;
-      top: -5px;
-      left: -10px;
-      z-index: -1;
-      width: 36px;
-      height: 36px;
-      background: $main-color;
-      border-radius: 50%;
-    }
+    @include before-circle;
   }
   .title {
     margin-bottom: 25px;
   }
   &__button {
-    width: 135px;
-    height: 45px;
-    background: $main-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border: none;
-    font-weight: 700;
-    font-size: 14px;
-    color: #000000;
     margin-right: 44px;
   }
   &__link {
@@ -45,7 +27,7 @@
   &__social-wrapper {
     position: absolute;
     left: 50px;
-    bottom: 420px;
+    top: 50%;
     transform: rotate(-90deg);
     display: flex;
     gap: 15px;

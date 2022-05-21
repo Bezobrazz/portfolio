@@ -12,71 +12,72 @@
 }
 
 @media (max-width: 880px) {
-	.header {
+  .header {
     background: url(../img/main_bg.jpg) 70% 0% / cover no-repeat;
-  .title_fs48 {
-    font-size: 40px;
-  }
-}
-
-@media (max-width: 576px) {
-  .header {
-    background: url(../img/main_bg.jpg) 65% 0% / cover no-repeat;
-    height: 640px;
-    &__social-wrapper {
-      display: none;
+    .title_fs48 {
+      font-size: 40px;
     }
   }
-  .title_fs48 {
-    font-size: 26px;
-  }
-  .menu {
-    &__wrapper {
-      width: 250px;
-      a {
-        font-size: 19px;
+
+  @media (max-width: 576px) {
+    .header {
+      background: url(../img/main_bg.jpg) 65% 0% / cover no-repeat;
+      height: 640px;
+      &__social-wrapper {
+        display: none;
       }
     }
-    &__close {
-      left: 200px;
-      top: 16px;
+    .title_fs48 {
+      font-size: 26px;
     }
-    &__social {
-      width: 250px;
-    }
-  }
-  .burger {
-    right: 15px;
-  }
-}
-
-@media (max-width: 320px) {
-  .header {
-    background: url(../img/main_bg.jpg) 65% 0% / cover no-repeat;
-    height: 640px;
-    &__social-wrapper {
-      display: none;
-    }
-  }
-  .title_fs48 {
-    font-size: 26px;
-  }
-  .menu {
-    &__wrapper {
-      width: 250px;
-      a {
-        font-size: 19px;
+    .menu {
+      &__wrapper {
+        width: 250px;
+        a {
+          font-size: 19px;
+        }
+      }
+      &__close {
+        left: 200px;
+        top: 16px;
+      }
+      &__social {
+        width: 250px;
       }
     }
-    &__close {
-      left: 200px;
-      top: 16px;
-    }
-    &__social {
-      width: 250px;
+    .burger {
+      right: 15px;
     }
   }
-  .burger {
-    right: 15px;
+
+  @media (max-width: 320px) {
+    .header {
+      background: url(../img/main_bg.jpg) 65% 0% / cover no-repeat;
+      height: 640px;
+      &__social-wrapper {
+        display: none;
+      }
+    }
+    .title_fs48 {
+      font-size: 26px;
+    }
+    .menu {
+      &__wrapper {
+        width: 250px;
+        a {
+          font-size: 19px;
+        }
+      }
+      &__close {
+        left: 200px;
+        top: 16px;
+      }
+      &__social {
+        width: 250px;
+      }
+    }
+    .burger {
+      right: 15px;
+    }
   }
 }

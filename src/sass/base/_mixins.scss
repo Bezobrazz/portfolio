@@ -12,7 +12,27 @@
   }
 }
 @mixin divider {
+  display: block;
   width: 60px;
   height: 0px;
   border: 3px solid $main-color;
+}
+@mixin divider_center {
+  display: block;
+  width: 60px;
+  height: 0px;
+  border: 3px solid $main-color;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+@mixin subtitle_circle {
+  position: relative;
+  text-align: center;
+  @include before-circle;
+  margin-bottom: 10px;
+  &::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

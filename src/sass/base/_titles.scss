@@ -11,6 +11,14 @@
     line-height: 60px;
     color: #000000;
   }
+  &_fs20 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  &_center {
+    text-align: center;
+    margin-bottom: 25px;
+  }
 }
 .subtitle {
   font-weight: 700;

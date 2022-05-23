@@ -1,15 +1,21 @@
 .about {
-  margin-bottom: 120px;
+  padding-top: 120px;
   &__wrapper {
     display: flex;
     gap: 123px;
   }
   &__photo {
-    width: 342px;
+    width: 100%;
+    img {
+      width: 342px;
+    }
+  }
+  &__descr {
+    padding-top: 7px;
   }
   &__subtitle {
     position: relative;
-    padding-left: 10px;
+    padding-left: 12px;
     @include before-circle;
     margin-bottom: 10px;
   }
@@ -30,7 +36,6 @@
   }
   &__items {
     display: flex;
-    gap: 30px;
     width: 260px;
     height: 116px;
     margin: 0 50px 20px 0;
@@ -65,5 +70,6 @@
   &__icon {
     width: 25px;
     height: 23.45px;
+    margin: 20px 20px 0 17px;
   }
 }

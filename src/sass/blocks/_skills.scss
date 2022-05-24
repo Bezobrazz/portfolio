@@ -10,7 +10,6 @@
     padding: 0 10px;
     display: grid;
     grid-template-columns: repeat(4, 270px);
-    // grid-template-rows: repeat(2, 270px);
     grid-template-rows: minmax(270px, auto);
     grid-auto-rows: minmax(245px, auto);
     gap: 13px;
@@ -32,6 +31,39 @@
       font-weight: 500;
       font-size: 12px;
       line-height: 18px;
+    }
+  }
+  &__ratings {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(2, 70px);
+    justify-content: space-between;
+    row-gap: 33px;
+    &-subtitle {
+      position: relative;
+      padding-left: 15px;
+      @include before-circle;
+      &:before {
+        top: -33%;
+      }
+    }
+    &-item {
+      display: grid;
+      grid-template-columns: 200px 35px;
+      justify-content: space-between;
+      align-content: space-between;
+    }
+    &-line {
+      width: 350px;
+      height: 14px;
+      background: #e8e4de;
+      border-radius: 4px;
+      span {
+        display: block;
+        height: 100%;
+        background-color: $main-color;
+        border-radius: 4px;
+      }
     }
   }
 }

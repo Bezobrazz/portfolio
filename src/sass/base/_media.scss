@@ -11,6 +11,43 @@
   }
 }
 
+@media (max-width: 1440px) {
+  .about {
+    &__wrapper {
+      gap: 60px;
+    }
+  }
+  .experience {
+    &__wrapper {
+      grid-template-columns: repeat(2, auto);
+    }
+  }
+}
+
+@media (max-width: 1042px) {
+  .header {
+    background: url(../img/main_bg.jpg) 70% 0% / cover no-repeat;
+  }
+  .about {
+    &__wrapper {
+      gap: 30px;
+    }
+    &__photo {
+      img {
+        width: 342px;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .experience {
+    &__wrapper {
+      column-gap: 50px;
+      grid-template-columns: 425px;
+    }
+  }
+}
+
 @media (max-width: 880px) {
   .header {
     background: url(../img/main_bg.jpg) 70% 0% / cover no-repeat;
@@ -19,50 +56,37 @@
     }
   }
 
-  @media (max-width: 576px) {
-    .header {
-      background: url(../img/main_bg.jpg) 65% 0% / cover no-repeat;
-      height: 640px;
-      &__social-wrapper {
-        display: none;
-      }
-    }
-    .title_fs48 {
-      font-size: 26px;
-    }
-    .menu {
-      &__wrapper {
-        width: 250px;
-        a {
-          font-size: 19px;
-        }
-      }
-      &__close {
-        left: 200px;
-        top: 16px;
-      }
-      &__social {
-        width: 250px;
-      }
-    }
-    .burger {
-      right: 15px;
+  .about {
+    &__wrapper {
+      gap: 55px;
     }
   }
 
-  @media (max-width: 320px) {
+  @media (max-width: 768px) {
+    .about {
+      &__wrapper {
+        flex-wrap: wrap;
+      }
+      &__items {
+        margin: 0 10px 20px 0;
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
     .header {
-      background: url(../img/main_bg.jpg) 65% 0% / cover no-repeat;
+      background: url(../img/main_bg.jpg) 70% 0% / cover no-repeat;
       height: 640px;
       &__social-wrapper {
         display: none;
       }
-    }
-    .title_fs48 {
-      font-size: 26px;
+      .title_fs48 {
+        font-size: 26px;
+      }
     }
     .menu {
       &__wrapper {
+        padding: 140px 20px;
         width: 250px;
         a {
           font-size: 19px;
@@ -79,5 +103,42 @@
     .burger {
       right: 15px;
     }
+
+    .about {
+      &__photo {
+        img {
+          margin: 0 auto;
+          display: block;
+          width: 100%;
+        }
+      }
+      &__skills {
+        justify-content: center;
+      }
+      .title_fs36 {
+        font-size: 26px;
+      }
+    }
+    .experience {
+      .title_fs36 {
+        font-size: 26px;
+      }
+      &__wrapper {
+        padding: 0;
+        grid-template-columns: repeat(1, 300px);
+        justify-content: center;
+      }
+      &__item {
+        &::before {
+          top: 30%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .header {
+    background: url(../img/main_bg.jpg) 68% 0% / cover no-repeat;
   }
 }

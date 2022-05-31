@@ -7,4 +7,8 @@ button {
   font-weight: 700;
   font-size: 14px;
   color: #000000;
+  transition: 0.5s all;
+  &:hover {
+    background-color: white;
+  }
 }

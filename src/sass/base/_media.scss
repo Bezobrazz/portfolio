@@ -5,13 +5,17 @@
       margin-bottom: 70px;
     }
     &__social-wrapper {
-      transform: rotate(0);
-      position: inherit;
+      left: -80px;
     }
   }
 }
 
 @media (max-width: 1440px) {
+  .header {
+    &__social-wrapper {
+      left: -130px;
+    }
+  }
   .about {
     &__wrapper {
       gap: 60px;
@@ -25,6 +29,12 @@
 }
 
 @media (max-width: 1250px) {
+  .header {
+    &__social-wrapper {
+      transform: rotate(0);
+      position: inherit;
+    }
+  }
   .skills {
     &__wrapper {
       grid-template-columns: repeat(auto-fit, 270px);
@@ -119,7 +129,7 @@
       grid-template-columns: 1fr;
     }
     &__form {
-      grid-template: 45px 190px 45px / repeat(2, 250px);
+      grid-template: 45px 190px 45px / repeat(2, 220px);
     }
   }
 }
@@ -144,6 +154,9 @@
 }
 
 @media (max-width: 576px) {
+  .container {
+    padding: 0 10px;
+  }
   .header {
     background: url(../img/main_bg.jpg) 70% 0% / cover no-repeat;
     height: 640px;
@@ -193,7 +206,7 @@
   }
   .experience {
     &__wrapper {
-      padding: 0;
+      padding-left: 10px;
       grid-template-columns: repeat(1, 300px);
     }
     &__item {
@@ -218,7 +231,8 @@
   }
   .price {
     &__wrapper {
-      grid-template-columns: repeat(auto-fit, 255px);
+      // grid-template-columns: repeat(auto-fit, 255px);
+      grid-template-columns: repeat(auto-fit, 100%);
     }
     &__divider {
       margin-bottom: 20px;
@@ -247,6 +261,14 @@
       width: 180px;
       margin: 0 auto;
       line-height: 18px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .price {
+    &__wrapper {
+      padding: 0 20px;
     }
   }
 }
